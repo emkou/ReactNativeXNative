@@ -19,6 +19,9 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeXNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeXNativeTests.m */; };
 		4E93E88CD33E77D8B54DBA5D /* libPods-ReactNativeXNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0214EF6E2B74D25426B5B383 /* libPods-ReactNativeXNative-tvOS.a */; };
+		7E44F9EA230D6F6C004303E7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44F9E8230D6F6C004303E7 /* MainViewController.m */; };
+		7E44F9EB230D6F6C004303E7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E44F9E9230D6F6C004303E7 /* MainViewController.xib */; };
+		7E44FA10230D7B22004303E7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44FA0F230D7B22004303E7 /* TableViewController.m */; };
 		9E1E8199906B771E27E3CE9E /* libPods-ReactNativeXNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C91F97A24382E77F26FC22A1 /* libPods-ReactNativeXNative-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,11 @@
 		5DACAEB033DB889059CDA7DB /* Pods-ReactNativeXNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNative-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNative-tvOSTests/Pods-ReactNativeXNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B7DE75242C09D06A42A869D /* libPods-ReactNativeXNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeXNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		708B79078CCD2658CBE850F6 /* Pods-ReactNativeXNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNative/Pods-ReactNativeXNative.release.xcconfig"; sourceTree = "<group>"; };
+		7E44F9E7230D6F6C004303E7 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7E44F9E8230D6F6C004303E7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7E44F9E9230D6F6C004303E7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		7E44FA0E230D7B22004303E7 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7E44FA0F230D7B22004303E7 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		81FE8BEAED663BC309EE5FC2 /* Pods-ReactNativeXNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNativeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNativeTests/Pods-ReactNativeXNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1F8870E90B6341FD4D947F /* Pods-ReactNativeXNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNative/Pods-ReactNativeXNative.debug.xcconfig"; sourceTree = "<group>"; };
 		C91F97A24382E77F26FC22A1 /* libPods-ReactNativeXNative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeXNative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				7E44F9E7230D6F6C004303E7 /* MainViewController.h */,
+				7E44F9E8230D6F6C004303E7 /* MainViewController.m */,
+				7E44F9E9230D6F6C004303E7 /* MainViewController.xib */,
+				7E44FA0E230D7B22004303E7 /* TableViewController.h */,
+				7E44FA0F230D7B22004303E7 /* TableViewController.m */,
 			);
 			name = ReactNativeXNative;
 			sourceTree = "<group>";
@@ -307,6 +320,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7E44F9EB230D6F6C004303E7 /* MainViewController.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +543,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				7E44F9EA230D6F6C004303E7 /* MainViewController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7E44FA10230D7B22004303E7 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
