@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import ListItem from './ListItem';
 
 export default class ListView extends Component {
   render() {
@@ -16,9 +17,22 @@ export default class ListView extends Component {
             { key: 'John' },
             { key: 'Jillian' },
             { key: 'Jimmy' },
-            { key: 'Julie' }
+            { key: 'Julie' },
+            { key: 'Emma' },
+            { key: 'Janna' },
+            { key: 'Susan' },
+            { key: 'Megan' },
+            { key: 'Kate' },
+            { key: 'Ivan' },
+            { key: 'Marc' },
+            { key: 'Johannes' },
+            { key: 'Margaret' },
+            { key: 'Maria' },
+            { key: 'Emil' },
+            { key: 'Ellen' },
+            { key: 'Bernie' }
           ]}
-          renderItem={({ item }) => <Text style={styles.item}>{item.key}</Text>}
+          renderItem={({ item }) => <ListItem item={item} />}
         />
       </View>
     );
