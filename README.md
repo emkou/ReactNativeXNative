@@ -1,4 +1,4 @@
-# Showcase of mixing ReactNative and Native code
+# Mixing ReactNative and Native code
 
 ## Secondary Paragraph
 
