@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, Button, View } from 'react-native';
-import { NavigationActions } from 'react-navigation';
 
 class MainView extends Component {
   static navigationOptions = {
@@ -21,7 +20,7 @@ class MainView extends Component {
   }
 
   openStateComponent = () => {
-    //
+    this.props.navigation.navigate('State');
   };
 
   openListComponent = () => {

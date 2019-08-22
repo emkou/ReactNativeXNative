@@ -11,6 +11,10 @@ const ListView = () => {
   );
 };
 
+ListView.navigationOptions = {
+  title: 'List View'
+};
+
 export default ListView;
 
 const styles = StyleSheet.create({
