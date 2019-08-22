@@ -8,11 +8,10 @@ class StateView extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      count: 0
-    };
 
-    //can be done with hooks too
+    this.state = {
+      count: 0 //can be done with hooks too
+    };
   }
 
   render() {
