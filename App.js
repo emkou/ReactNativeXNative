@@ -1,19 +1,7 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import ListView from './src/ListView';
 
-const App = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ListView />
-    </SafeAreaView>
-  );
-};
+import { Navigator } from './utils/navigation';
 
-export default App;
+const AppNavigator = () => <Navigator />;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
-});
+export default AppNavigator;

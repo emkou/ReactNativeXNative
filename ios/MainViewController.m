@@ -33,7 +33,7 @@
   
   UIViewController *reactNativeViewController = [UIViewController new];
   reactNativeViewController.view = rootView;
-  
+  [self.navigationController setNavigationBarHidden:YES];
   [self.navigationController pushViewController:reactNativeViewController animated:YES];
 }
 
