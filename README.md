@@ -8,6 +8,6 @@ comparison about the performance and complexity is included.
 
 The ReactNative codebase in this repository reflects my work with RN during 2019, I exemplify usage of state/stateless components, classes, hooks, redux, fetch and testing with Jest.
 
-## ReactNative domain
+## Native domain
 
-The Native codebase reflects the (comparable to RN) workflow needed to acheive the presentation of a TableView with 100 rows of data fetched remotely.
+The Native codebase reflects the (comparable to RN) workflow needed to achieve the presentation of a TableView with 100 rows of data fetched remotely.
