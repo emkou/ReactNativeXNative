@@ -8,7 +8,6 @@ function ListView() {
 
   useEffect(() => {
     this.getItems().then(items => setRowItems(items));
-    dispatch(fetchItems());
   });
 
   getItems = async () => {
