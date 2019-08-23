@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Button, View, Text } from 'react-native';
+import { makeRequest } from '../utils/http';
 
 class StateView extends Component {
   static navigationOptions = {
@@ -10,7 +11,7 @@ class StateView extends Component {
     super(props);
 
     this.state = {
-      count: 0 //can be done with hooks too
+      count: 0
     };
   }
 

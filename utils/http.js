@@ -1,14 +1,14 @@
 const defaultOptions = {
-  method: 'GET',
-  credentials: 'include'
+  method: 'GET'
 };
 const defaultHeaders = {
   Accept: 'application/json',
-  'X-Source': appSource,
   'Content-Type': 'application/json'
 };
 
 const isJson = ({ headers }) => headers.has('Content-Type') && headers.get('Content-Type').includes('json');
+const endpoint = 'http://www.mocky.io';
+//const { headers, body } = await makeRequest('/v2/5d5fcee22f00007f225f3953');
 
 const handleResponse = async resp => {
   if ([401, 502, 503, 504].includes(resp.status)) {
@@ -52,7 +52,7 @@ export const makeRequest = (path, options = {}) => {
   }
 
   const url = `${endpoint}${path}`;
-  const { token, headers, body, ...fetchOptions } = options;
+  const { headers, body, ...fetchOptions } = options;
 
   const mergedOptions = {
     ...defaultOptions,
