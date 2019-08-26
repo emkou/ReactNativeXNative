@@ -8,25 +8,26 @@
 
 #import "TableViewController.h"
 
-@interface TableViewController ()
-
+@interface TableViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UITableView * tableView;
 @end
 
 @implementation TableViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  self.tableView.delegate = self;
+  self.tableView.dataSource = self;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Tableview delegates
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return 0;
 }
-*/
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+  return [UITableViewCell new];
+}
 
 @end
