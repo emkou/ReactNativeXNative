@@ -1,8 +1,8 @@
 //
-//  RequestMaker.h
+//  Person.h
 //  ReactNativeXNative
 //
-//  Created by Emil Doychinov on 2019-08-26.
+//  Created by Emil Doychinov on 8/26/19.
 //  Copyright © 2019 Facebook. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RequestMaker : NSObject
--(void)call:(void (^)(NSArray *))callback;
+@interface Person : NSObject
+
 @end
 
 NS_ASSUME_NONNULL_END

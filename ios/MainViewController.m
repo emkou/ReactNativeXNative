@@ -10,6 +10,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "TableViewController.h"
 
 @interface MainViewController ()
 
@@ -38,7 +39,8 @@
 }
 
 - (IBAction)openNative:(id)sender {
-    
+  TableViewController * tableViewController = [TableViewController new];
+  [self.navigationController pushViewController:tableViewController animated:YES];
 }
 
 

@@ -25,6 +25,7 @@
 		7E45FF7F2313EEEC002121AB /* TableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45FF7D2313EEEC002121AB /* TableCellTableViewCell.m */; };
 		7E45FF802313EEEC002121AB /* TableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E45FF7E2313EEEC002121AB /* TableCellTableViewCell.xib */; };
 		7E45FF842313F1DC002121AB /* RequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E45FF832313F1DC002121AB /* RequestMaker.m */; };
+		7EF23D452314707000F9EE24 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF23D442314707000F9EE24 /* Person.m */; };
 		9E1E8199906B771E27E3CE9E /* libPods-ReactNativeXNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C91F97A24382E77F26FC22A1 /* libPods-ReactNativeXNative-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,8 @@
 		7E45FF7E2313EEEC002121AB /* TableCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCellTableViewCell.xib; sourceTree = "<group>"; };
 		7E45FF822313F1DC002121AB /* RequestMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestMaker.h; sourceTree = "<group>"; };
 		7E45FF832313F1DC002121AB /* RequestMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestMaker.m; sourceTree = "<group>"; };
+		7EF23D432314707000F9EE24 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7EF23D442314707000F9EE24 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		81FE8BEAED663BC309EE5FC2 /* Pods-ReactNativeXNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNativeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNativeTests/Pods-ReactNativeXNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1F8870E90B6341FD4D947F /* Pods-ReactNativeXNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeXNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeXNative/Pods-ReactNativeXNative.debug.xcconfig"; sourceTree = "<group>"; };
 		C91F97A24382E77F26FC22A1 /* libPods-ReactNativeXNative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeXNative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +156,7 @@
 				7E44F9E9230D6F6C004303E7 /* MainViewController.xib */,
 				7E44FA0E230D7B22004303E7 /* TableViewController.h */,
 				7E44FA0F230D7B22004303E7 /* TableViewController.m */,
+				7EF23D4223146D2000F9EE24 /* Model */,
 				7E45FF812313F1B9002121AB /* Networking */,
 				7E45FF7B2313EE56002121AB /* UIElements */,
 			);
@@ -189,6 +193,15 @@
 				7E45FF832313F1DC002121AB /* RequestMaker.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		7EF23D4223146D2000F9EE24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EF23D432314707000F9EE24 /* Person.h */,
+				7EF23D442314707000F9EE24 /* Person.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -574,6 +587,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				7E45FF7F2313EEEC002121AB /* TableCellTableViewCell.m in Sources */,
+				7EF23D452314707000F9EE24 /* Person.m in Sources */,
 				7E44F9EA230D6F6C004303E7 /* MainViewController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7E45FF842313F1DC002121AB /* RequestMaker.m in Sources */,
