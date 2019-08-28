@@ -20,9 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
+#pragma mark go to ReactNative bridge
 - (IBAction)openReactNative:(id)sender {
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
@@ -38,12 +38,6 @@
   [self.navigationController pushViewController:reactNativeViewController animated:YES];
 }
 
-- (IBAction)openNative:(id)sender {
-  TableViewController * tableViewController = [TableViewController new];
-  [self.navigationController pushViewController:tableViewController animated:YES];
-}
-
-
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
 #if DEBUG
@@ -51,6 +45,12 @@
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+#pragma mark go to native tableView
+- (IBAction)openNative:(id)sender {
+  TableViewController * tableViewController = [TableViewController new];
+  [self.navigationController pushViewController:tableViewController animated:YES];
 }
 
 @end
