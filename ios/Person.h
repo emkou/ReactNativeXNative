@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
-
+@property (strong, nonatomic) NSString * firstName;
+@property (strong, nonatomic) NSString * lastName;
+- (instancetype) initWithDictionary: (NSDictionary *) dictionary;
 @end
 
 NS_ASSUME_NONNULL_END

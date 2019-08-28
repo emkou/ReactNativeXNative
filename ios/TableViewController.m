@@ -9,10 +9,11 @@
 #import "TableViewController.h"
 #import "TableCellTableViewCell.h"
 #import "RequestMaker.h"
+#import "Person.h"
 @interface TableViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) RequestMaker * requestMaker;
-@property (nonatomic, strong) NSArray * response;
+@property (nonatomic, strong) NSArray<Person *> * response;
 @end
 
 @implementation TableViewController
@@ -48,8 +49,8 @@
   {
     cell = [[[NSBundle mainBundle] loadNibNamed:@"TableCellTableViewCell" owner:self options:nil] objectAtIndex:0];
   }
-  cell.name.text = [[self.response objectAtIndex:indexPath.row] valueForKey:@"first_name"];
-  cell.surname.text = [[self.response objectAtIndex:indexPath.row] valueForKey:@"last_name"];
+  cell.name.text = [self.response objectAtIndex:indexPath.row].firstName;
+  cell.surname.text = [self.response objectAtIndex:indexPath.row].lastName;
   return cell;
 }
 

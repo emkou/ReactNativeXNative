@@ -8,14 +8,20 @@
 
 #import "RequestMaker.h"
 
+static NSString *const kDataUrl = @"http://www.mocky.io/v2/5d5fcee22f00007f225f3953";
+@interface RequestMaker()
+@property (nonatomic, strong) NSURLSessionDataTask *downloadTask;
+@end
+
+
 @implementation RequestMaker
 
--(void)call:(void (^)(NSArray *))callback {
-  NSString *dataUrl = @"http://www.mocky.io/v2/5d5fcee22f00007f225f3953";
-  NSURL *url = [NSURL URLWithString:dataUrl];
-  
-  // 2
-  NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
+
+
+-(void)call:(void (^)(NSArray<Person *> *))callback {
+  NSURL *url = [NSURL URLWithString:kDataUrl];
+  [self.downloadTask cancel];
+  self.downloadTask = [[NSURLSession sharedSession]
                                         dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                           
                                           NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
@@ -24,10 +30,16 @@
                                             callback([NSArray new]);
                                           }
                                           else {
-                                            callback(jsonArray);
+                                            NSMutableArray<Person *> * mappedObjects = [NSMutableArray new];
+                                            for (NSDictionary * personDictionary in jsonArray) {
+                                              Person * person = [[Person alloc] initWithDictionary:personDictionary];
+                                              [mappedObjects addObject:person];
+                                            }
+                                            
+                                            callback(mappedObjects);
                                           }
                                         }];
   
-  [downloadTask resume];
+  [self.downloadTask resume];
 }
 @end

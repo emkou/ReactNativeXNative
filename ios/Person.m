@@ -9,5 +9,15 @@
 #import "Person.h"
 
 @implementation Person
+- (instancetype) initWithDictionary: (NSDictionary *) dictionary {
+  
+  self = [super init];
+  
+  if (self) {
+    self.firstName = [dictionary objectForKey:@"first_name"];
+    self.lastName = [dictionary objectForKey:@"last_name"];
+  }
 
+  return self;
+}
 @end
