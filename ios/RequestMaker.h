@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RequestMaker : NSObject
--(void)call:(void (^)(NSArray<Person *> *))callback;
+-(void)fetchData:(void (^)(NSArray<Person *> *))callback;
 @end
 
 NS_ASSUME_NONNULL_END

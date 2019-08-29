@@ -26,14 +26,12 @@
   [self.view addSubview:self.tableView];
   
   self.requestMaker = [RequestMaker new];
-  [self.requestMaker call:^(NSArray * arr) { //weak!!
+  [self.requestMaker fetchData:^(NSArray * arr) { //weak!!
     self.response = arr;
     dispatch_async(dispatch_get_main_queue(), ^{
       [self.tableView reloadData];
     });
-    
   }];
-  
 }
 
 #pragma mark - Tableview delegates

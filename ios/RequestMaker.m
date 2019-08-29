@@ -9,16 +9,14 @@
 #import "RequestMaker.h"
 
 static NSString *const kDataUrl = @"http://www.mocky.io/v2/5d5fcee22f00007f225f3953";
+
 @interface RequestMaker()
 @property (nonatomic, strong) NSURLSessionDataTask *downloadTask;
 @end
 
-
 @implementation RequestMaker
 
-
-
--(void)call:(void (^)(NSArray<Person *> *))callback {
+-(void)fetchData:(void (^)(NSArray<Person *> *))callback {
   NSURL *url = [NSURL URLWithString:kDataUrl];
   [self.downloadTask cancel];
   self.downloadTask = [[NSURLSession sharedSession]
